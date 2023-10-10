@@ -1,8 +1,20 @@
+img{width: 100%;}
 .h1{font-style: italic;text-align: center;padding-top:200px;color: azure;}
 .div1{background-image: url(../img/photo-1575218823251-f9d243b6f720.avif);background-repeat:no-repeat; background-size: cover;height: 500px;;}
 .t1{font-size: 60px; background-color: palevioletred; border-radius:50%;padding:15px;}
 .O1{font-size: 60px; background-color: rgb(236, 192, 48); border-radius:50%;padding:15px;}
 .v1{font-size: 60px; background-color: rgb(32, 178, 204); border-radius:50%;padding:15px;}
 .s1{font-size: 60px; background-color: rgb(204, 58, 32); border-radius:50%;padding:15px;}
-.div2{text-align: center;}
+.div2{text-align: center;margin-top: 30px;}
 .p1{font-size: 15px;}
+.i1{background-image:url(../img/img1.avif);height: 350px;color: whitesmoke;margin-top: 40px;}
+.i2{background-image:url(../img/img4.avif);height: 710px;text-align:center;color: rgb(32, 190, 32);margin-top: 40px;}
+.p2{text-align: center;color: whitesmoke;}
+.i3{background-image: url(../img/juices.jpg);height:350px;color: whitesmoke;margin-top: 40px;}
+.i4{background-image:url(../img/img3.avif);height: 350px;color:whitesmoke;}
+.i5{background-image: url(../img/img5.avif);height: 350px;color: whitesmoke;}
+.a1{text-align: center;color: rgb(24, 182, 24);margin-top: 40px;}
+.hh1{text-align: center;font-size: 40px;}
+.p1{text-align: center;}
+.hh4{text-align: center;}
+.div3{height: 40px;}
