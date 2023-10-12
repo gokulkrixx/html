@@ -18,5 +18,26 @@ img{width: 100%;}
 .p1{text-align: center;}
 .hh4{text-align: center;}
 .div4{background-image:url('../img/bggg.avif');height: 600px;}
-.p3{color: green;}
+.p3{color: green;margin-top: 100px;font-size: 20px;}
 .p4{font-size: 40px;}
+.h3{color: green;}
+#countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    color: green;
+  }
+  
+  #countdown li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  .subheading{color: green;}
+  .imgg1{border-radius: 50%;height: 100px;width: 100px;}
+.div5{text-align: center;}
+.div6{border-left: 2px solid green;}
+.div7{border-left: 2px solid green;}
+.div8{border-left: 2px solid green;}
+.div9{font-size: 25px;margin-top:150px;}
