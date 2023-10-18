@@ -44,3 +44,6 @@ img{width: 100%;}
 .div10{background-color: beige;text-align: center;margin-top: 70px;}
 .div11{ border-radius: 50%;}
 .navbar-brand{color: rgb(68, 184, 68);}
+.name{font-size: 20px;font-style:italic;}
+.color{background-color: rgb(30, 167, 185);}
+.imgh img{max-height:170px;}
