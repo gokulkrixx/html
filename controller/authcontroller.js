@@ -35,10 +35,11 @@ exports.login = async function (req,res){
         console.log("user:",user);
 
         if(user){
-            let db_password = user.db_password;
+            let db_password = user.password;
             console.log("db_passord :",db_password);
 
-            if (password === user.password){
+            bcrypt.compare(password,db_password,(err,auth)=>{
+            if (auth === true) {
                 //openssl genpkey - algoritham RSA - outprivate_key.pem _ae256
                 let access_token = jwt.sign({user_id : user.user_id},process.env.
                 PRIVATE_KEY,{expiresIn : "id"});
@@ -52,17 +53,17 @@ exports.login = async function (req,res){
              res.status(response.statusCode).send(response);
              return;
 
-             
-
-        }
-        else{
+            
+        
+            }else{
                 let response = error_function({
-                    statusCode : 404,
+                    statusCode : 400,
                     message : "Invalid password",
                 });
                 res.status(response.statusCode).send(response);
                 return;
             }
+        });
         
             
 
