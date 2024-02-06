@@ -2,13 +2,13 @@ const users = require('../db/models/users');
 const success_function = require('../utils/response-handler').success_function;
 const error_function = require('../utils/response-handler').error_function;
 const bcrypt = require('bcryptjs');
-
-exports.createUser = async function createUser(req, res) {
+const checkLogin = require('../utils/checkLogin').checkLogin_function;
+async function createUser(req, res) {
     try {
-        //let datas = req.body;
-        let name = req.body.name;
-        let email = req.body.email;
-        let password = req.body.password
+        const datas = req.body;
+        const name = req.body.name;
+        const email = req.body.email;
+        const password = req.body.password
 
         //Validate
         let userFound = await users.findOne({email : datas.email});
@@ -17,6 +17,7 @@ exports.createUser = async function createUser(req, res) {
             let response = error_function({
                 statusCode : 400,
                 message : "User already exist",
+
             });
             res.status(response.statusCode).send(response);
             return;
@@ -37,6 +38,7 @@ exports.createUser = async function createUser(req, res) {
         });
 
         if(new_user){
+            
             let response_data = {
                 _id : new_user._id,
                 name : new_user.name,

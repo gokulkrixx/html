@@ -5,7 +5,7 @@ let jwt = require('jsonwebtoken');
 let dotenv = require('dotenv');
 dotenv.config();
 
-exports.login = async function (req,res){
+exports.login = async function createUser (req,res){
     try{
         let email = req.body.email;
         console.log ("email:",email);
