@@ -1,13 +1,13 @@
-import { useState } from 'react'
+import Counter from "./components/Counter";
+import Counter1 from "./components/Counter1";
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <h1>Hello react</h1>
-    <h2>hello react</h2>
+    <Counter initialCount = {12} />
+    <Counter1 initialCount = {10}/>
     </>
   )
 }
