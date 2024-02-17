@@ -1,7 +1,9 @@
 // import Counter from "./components/Counter";
 // import Counter1 from "./components/Counter1";
-import Parent from "./components/forms/Parent";
-
+// import Parent from "./components/forms/Parent";
+// import Login from "./components/login";
+import Controlled from "./components/controlledANDuncontrolled/Controlled";
+import Uncontrolled from "./components/controlledANDuncontrolled/Uncontrolled";
 
 
 function App() {
@@ -10,7 +12,11 @@ function App() {
    {/* { <Counter initialCount = {12} />
     <Counter1 initialCount = {10}/>} */}
 
-    <Parent/>
+    {/* <Parent/> */}
+    {/* <Login/> */}
+    <Controlled/>
+    <Uncontrolled/>
+
     </>
   )
 }
